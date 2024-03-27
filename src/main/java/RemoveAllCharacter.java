@@ -12,6 +12,12 @@ public class RemoveAllCharacter {
      * @return str, without any characters of type ch.
      */
     public String removeAll(String str, String ch){
-        return null;
+        return str.replaceAll(ch, "");
+    }
+    public static void main(String[] args){
+        RemoveAllCharacter all=new RemoveAllCharacter();
+        String str = "Chaitanya";
+        String ch = "a";
+        System.out.println("String after removing '" + ch + "': " + all.removeAll(str, ch));
     }
 }
